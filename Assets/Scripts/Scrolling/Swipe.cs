@@ -1,10 +1,11 @@
+using GameSettings;
 using UnityEngine;
 
 namespace Scrolling
 {
     public class Swipe : MonoBehaviour
     {
-        [SerializeField] private float swipeSpeed = 3.0f;
+        [SerializeField] private GameSettingsScriptable gameSettingsScriptable;
 
         private Vector2 _firstPressPos;
         private Vector2 _secondPressPos;
@@ -24,7 +25,7 @@ namespace Scrolling
             if(Input.GetMouseButtonUp(0))
             {
                 _secondPressPos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
-                SwipeVelocity = -(_secondPressPos.x - _firstPressPos.x) / Screen.width * swipeSpeed;
+                SwipeVelocity = -(_secondPressPos.x - _firstPressPos.x) / Screen.width * gameSettingsScriptable.scrollSpeed;
             }
 
             SwipeVelocity = Mathf.Lerp(SwipeVelocity, 0.0f, Time.deltaTime);

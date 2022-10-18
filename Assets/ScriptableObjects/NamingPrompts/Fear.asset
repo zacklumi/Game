@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Fear
   m_EditorClassIdentifier: 
-  RootEmotion: 
-  ChildEmotions: []
+  rootEmotion: Fear
+  childEmotions:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
