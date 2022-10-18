@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion: Sadness
   childEmotions:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ashamed
+  - Dissappointed
+  - Lonely
+  - Stressed
+  - Tired
+  - Upset

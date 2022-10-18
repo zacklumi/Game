@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion: Confidence
   childEmotions:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Accepted
+  - Determined
+  - Inspired
+  - Proud
+  - Respected
+  - Supported

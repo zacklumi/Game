@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion: Calm
   childEmotions:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Content
+  - Focused
+  - Patient
+  - Relaxed
+  - Thankful
+  - Thoughtful

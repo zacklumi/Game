@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion: Joy
   childEmotions:
-  - a
-  - b
-  - c
-  - d
-  - e
-  - f
+  - Cheerful
+  - Creative
+  - Energetic
+  - Excited
+  - Hopeful
+  - Loving

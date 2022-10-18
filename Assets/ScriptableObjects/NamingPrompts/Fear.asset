@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion: Fear
   childEmotions:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Anxious
+  - Insecure
+  - Powerless
+  - Rejected
+  - Scared
+  - Shocked
