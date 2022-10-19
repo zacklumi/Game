@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion:
     emotionName: Calm
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.24705882, g: 0.31764707, b: 0.7294118, a: 1}
   childEmotions:
   - emotionName: Content
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.22745098, g: 0.6, b: 1, a: 1}
   - emotionName: Focused
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.30980393, g: 0.5764706, b: 0.8666667, a: 1}
   - emotionName: Patient
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.6431373, g: 0.7764706, b: 0.92156863, a: 1}
   - emotionName: Relaxed
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.24313726, g: 0.627451, b: 0.7176471, a: 1}
   - emotionName: Thankful
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.25490198, g: 0.8235294, b: 1, a: 1}
   - emotionName: Thoughtful
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.05490196, g: 0.40392157, b: 0.5647059, a: 1}

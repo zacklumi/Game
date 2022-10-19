@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion:
     emotionName: Anger
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.77254903, g: 0.05882353, b: 0.05882353, a: 1}
   childEmotions:
   - emotionName: Aggressive
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.9882353, g: 0.105882354, b: 0, a: 1}
   - emotionName: Disgusted
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.84705883, g: 0.26666668, b: 0.2, a: 1}
   - emotionName: Frustrated
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.92941177, g: 0.43137255, b: 0.37254903, a: 1}
   - emotionName: Hurt
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.5137255, g: 0.06666667, b: 0.015686275, a: 1}
   - emotionName: Jealous
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.5882353, g: 0.16862746, b: 0.11764706, a: 1}
   - emotionName: Selfish
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.67058825, g: 0.32941177, b: 0.28627452, a: 1}

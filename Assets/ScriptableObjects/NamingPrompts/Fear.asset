@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootEmotion:
     emotionName: Fear
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.83137256, g: 0.4509804, b: 0.15294118, a: 1}
   childEmotions:
   - emotionName: Anxious
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 1, g: 0.5294118, b: 0, a: 1}
   - emotionName: Insecure
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.8784314, g: 0.5803922, b: 0.24313726, a: 1}
   - emotionName: Powerless
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 1, g: 0.7647059, b: 0.49803922, a: 1}
   - emotionName: Rejected
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.74509805, g: 0.3647059, b: 0, a: 1}
   - emotionName: Scared
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 1, g: 0.3882353, b: 0, a: 1}
   - emotionName: Shocked
-    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+    emotionColor: {r: 0.9411765, g: 0.6392157, b: 0.29411766, a: 1}
