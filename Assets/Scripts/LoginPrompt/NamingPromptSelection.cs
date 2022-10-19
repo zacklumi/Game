@@ -1,6 +1,8 @@
 using System;
+using LoginPrompt.ScriptableObjects;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace LoginPrompt
 {
@@ -8,6 +10,7 @@ namespace LoginPrompt
     {
         public NamingPromptScriptable namingData;
         public TextMeshProUGUI TextMeshPro { get; private set; }
+        public Image Image { get; private set; }
 
         public static event Action<string> OnNamingButtonPressed;
     
@@ -17,6 +20,12 @@ namespace LoginPrompt
             if (TextMeshPro != null)
             {
                 TextMeshPro.text = namingData.rootEmotion.emotionName;
+            }
+
+            Image = GetComponent<Image>();
+            if (Image != null)
+            {
+                Image.color = namingData.rootEmotion.emotionColor;
             }
         }
 

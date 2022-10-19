@@ -26,7 +26,9 @@ namespace LoginPrompt
             var iterator = 0;
             foreach (var prompt in promptSelections)
             {
-                prompt.TextMeshPro.text = selection.namingData.childEmotions[iterator++].emotionName;
+                prompt.TextMeshPro.text = selection.namingData.childEmotions[iterator].emotionName;
+                prompt.Image.color = selection.namingData.childEmotions[iterator].emotionColor;
+                iterator++;
             }
         }
 
@@ -44,6 +46,7 @@ namespace LoginPrompt
             foreach (var prompt in promptSelections)
             {
                 prompt.TextMeshPro.text = prompt.namingData.rootEmotion.emotionName;
+                prompt.Image.color = prompt.namingData.rootEmotion.emotionColor;
             }
         }
 

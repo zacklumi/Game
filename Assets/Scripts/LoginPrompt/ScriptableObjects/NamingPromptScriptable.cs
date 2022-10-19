@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LoginPrompt
+namespace LoginPrompt.ScriptableObjects
 {
     [CreateAssetMenu(menuName = "GameAssets/Naming")]
     public class NamingPromptScriptable : ScriptableObject
