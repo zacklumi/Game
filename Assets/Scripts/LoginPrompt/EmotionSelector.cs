@@ -26,13 +26,13 @@ namespace LoginPrompt
             var iterator = 0;
             foreach (var prompt in promptSelections)
             {
-                prompt.TextMeshPro.text = selection.namingData.childEmotions[iterator++];
+                prompt.TextMeshPro.text = selection.namingData.childEmotions[iterator++].emotionName;
             }
         }
 
         private void UpdateButtons(string selection)
         {
-            var selectedPrompt = promptSelections.Find((prompt) => prompt.namingData.rootEmotion == selection);
+            var selectedPrompt = promptSelections.Find((prompt) => prompt.namingData.rootEmotion.emotionName == selection);
             if (selectedPrompt != null)
             {
                 UpdateAllPrompts(selectedPrompt);
@@ -43,7 +43,7 @@ namespace LoginPrompt
         {
             foreach (var prompt in promptSelections)
             {
-                prompt.TextMeshPro.text = prompt.namingData.rootEmotion;
+                prompt.TextMeshPro.text = prompt.namingData.rootEmotion.emotionName;
             }
         }
 

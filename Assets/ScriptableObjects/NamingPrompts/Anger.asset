@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Anger
   m_EditorClassIdentifier: 
-  rootEmotion: Anger
+  rootEmotion:
+    emotionName: Anger
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
   childEmotions:
-  - Aggressive
-  - Disgusted
-  - Frustrated
-  - Hurt
-  - Jealous
-  - Selfish
+  - emotionName: Aggressive
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Disgusted
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Frustrated
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Hurt
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Jealous
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Selfish
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}

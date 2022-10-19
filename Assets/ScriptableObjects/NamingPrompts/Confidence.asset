@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Confidence
   m_EditorClassIdentifier: 
-  rootEmotion: Confidence
+  rootEmotion:
+    emotionName: Confidence
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
   childEmotions:
-  - Accepted
-  - Determined
-  - Inspired
-  - Proud
-  - Respected
-  - Supported
+  - emotionName: Accepted
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Determined
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Inspired
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Proud
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Respected
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Supported
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
