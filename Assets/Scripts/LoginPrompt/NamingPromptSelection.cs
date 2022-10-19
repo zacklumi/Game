@@ -1,18 +1,28 @@
-using LoginPrompt;
+using System;
 using TMPro;
 using UnityEngine;
 
-public class NamingPromptSelection : MonoBehaviour
+namespace LoginPrompt
 {
-    public NamingPromptScriptable namingData;
-    public TextMeshProUGUI _textMeshPro { get; private set; }
-
-    private void Awake()
+    public class NamingPromptSelection : MonoBehaviour
     {
-        _textMeshPro = GetComponentInChildren<TextMeshProUGUI>();
-        if (_textMeshPro != null)
+        public NamingPromptScriptable namingData;
+        public TextMeshProUGUI TextMeshPro { get; private set; }
+
+        public static event Action<string> OnNamingButtonPressed;
+    
+        private void Awake()
         {
-            _textMeshPro.text = namingData.rootEmotion;
+            TextMeshPro = GetComponentInChildren<TextMeshProUGUI>();
+            if (TextMeshPro != null)
+            {
+                TextMeshPro.text = namingData.rootEmotion;
+            }
+        }
+
+        public void PostNamingButtonPressed()
+        {
+            OnNamingButtonPressed?.Invoke(TextMeshPro.text);
         }
     }
 }

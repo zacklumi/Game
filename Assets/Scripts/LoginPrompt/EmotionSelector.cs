@@ -1,24 +1,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmotionSelector : MonoBehaviour
+namespace LoginPrompt
 {
-    public List<NamingPromptSelection> promptSelections = new();
-
-    public void UpdateAllPrompts(NamingPromptSelection selection)
+    public class EmotionSelector : MonoBehaviour
     {
-        var iterator = 0;
-        foreach (var prompt in promptSelections)
+        public List<NamingPromptSelection> promptSelections = new();
+
+        private void Awake()
         {
-            prompt._textMeshPro.text = selection.namingData.childEmotions[iterator++];
+            NamingPromptSelection.OnNamingButtonPressed += UpdateButtons;
+            BackButton.OnBackButtonPressed += ResetAllPrompts;
+            GameController.OnSelectionsCompleted += HideSelf;
         }
-    }
 
-    public void ResetAllPrompts()
-    {
-        foreach (var prompt in promptSelections)
+        private void OnDestroy()
         {
-            prompt._textMeshPro.text = prompt.namingData.rootEmotion;
+            NamingPromptSelection.OnNamingButtonPressed -= UpdateButtons;
+            BackButton.OnBackButtonPressed -= ResetAllPrompts;
+            GameController.OnSelectionsCompleted -= HideSelf;
+        }
+
+        private void UpdateAllPrompts(NamingPromptSelection selection)
+        {
+            var iterator = 0;
+            foreach (var prompt in promptSelections)
+            {
+                prompt.TextMeshPro.text = selection.namingData.childEmotions[iterator++];
+            }
+        }
+
+        private void UpdateButtons(string selection)
+        {
+            var selectedPrompt = promptSelections.Find((prompt) => prompt.namingData.rootEmotion == selection);
+            if (selectedPrompt != null)
+            {
+                UpdateAllPrompts(selectedPrompt);
+            }
+        }
+
+        private void ResetAllPrompts()
+        {
+            foreach (var prompt in promptSelections)
+            {
+                prompt.TextMeshPro.text = prompt.namingData.rootEmotion;
+            }
+        }
+
+        private void HideSelf()
+        {
+            gameObject.SetActive(false);
         }
     }
 }

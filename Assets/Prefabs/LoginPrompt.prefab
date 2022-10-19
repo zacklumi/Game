@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8387837091351604599}
+  - component: {fileID: 1856850616482093092}
   - component: {fileID: 6359956730965564985}
   - component: {fileID: 3077436588710794}
   - component: {fileID: 5360511358715030670}
@@ -39,6 +40,18 @@ RectTransform:
   m_AnchoredPosition: {x: 36, y: -30}
   m_SizeDelta: {x: 32, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1856850616482093092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252644430975947280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5aaebe987a2fa4e9693f65ceaef41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &6359956730965564985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -121,9 +134,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6373528478923185484}
-        m_TargetAssemblyTypeName: EmotionSelector, Assembly-CSharp
-        m_MethodName: ResetAllPrompts
+      - m_Target: {fileID: 1856850616482093092}
+        m_TargetAssemblyTypeName: BackButton, Assembly-CSharp
+        m_MethodName: PostOnBackButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
