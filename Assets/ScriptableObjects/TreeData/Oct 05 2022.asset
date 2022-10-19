@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afc2a2c7542161418d785ef85f6cec3, type: 3}
+  m_Name: Oct 05 2022
+  m_EditorClassIdentifier: 
+  totalSelections: 173346
+  emotionalData:
+  - emotionName: Aggressive
+    selections: 8494
+  - emotionName: Disgusted
+    selections: 7105
+  - emotionName: Frustrated
+    selections: 1072
+  - emotionName: Hurt
+    selections: 2021
+  - emotionName: Jealous
+    selections: 8720
+  - emotionName: Selfish
+    selections: 2622
+  - emotionName: Content
+    selections: 7564
+  - emotionName: Focused
+    selections: 9833
+  - emotionName: Patient
+    selections: 8212
+  - emotionName: Relaxed
+    selections: 2799
+  - emotionName: Thankful
+    selections: 5745
+  - emotionName: Thoughtful
+    selections: 1285
+  - emotionName: Accepted
+    selections: 4028
+  - emotionName: Determined
+    selections: 1803
+  - emotionName: Inspired
+    selections: 7672
+  - emotionName: Proud
+    selections: 1294
+  - emotionName: Respected
+    selections: 1609
+  - emotionName: Supported
+    selections: 7736
+  - emotionName: Anxious
+    selections: 5610
+  - emotionName: Insecure
+    selections: 5958
+  - emotionName: Powerless
+    selections: 1729
+  - emotionName: Rejected
+    selections: 7913
+  - emotionName: Scared
+    selections: 4126
+  - emotionName: Shocked
+    selections: 1670
+  - emotionName: Cheerful
+    selections: 1270
+  - emotionName: Creative
+    selections: 9399
+  - emotionName: Energetic
+    selections: 423
+  - emotionName: Excited
+    selections: 5760
+  - emotionName: Hopeful
+    selections: 9244
+  - emotionName: Loving
+    selections: 9704
+  - emotionName: Ashamed
+    selections: 8136
+  - emotionName: Disappointed
+    selections: 626
+  - emotionName: Lonely
+    selections: 2750
+  - emotionName: Stressed
+    selections: 2265
+  - emotionName: Tired
+    selections: 2509
+  - emotionName: Upset
+    selections: 4640
