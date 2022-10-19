@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Sadness
   m_EditorClassIdentifier: 
-  rootEmotion: Sadness
+  rootEmotion:
+    emotionName: Sadness
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
   childEmotions:
-  - Ashamed
-  - Dissappointed
-  - Lonely
-  - Stressed
-  - Tired
-  - Upset
+  - emotionName: Ashamed
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Disappointed
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Lonely
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Stressed
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Tired
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Upset
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}

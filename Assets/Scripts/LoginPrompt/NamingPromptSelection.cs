@@ -16,7 +16,7 @@ namespace LoginPrompt
             TextMeshPro = GetComponentInChildren<TextMeshProUGUI>();
             if (TextMeshPro != null)
             {
-                TextMeshPro.text = namingData.rootEmotion;
+                TextMeshPro.text = namingData.rootEmotion.emotionName;
             }
         }
 

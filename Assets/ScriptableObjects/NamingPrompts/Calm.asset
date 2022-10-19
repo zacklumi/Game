@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Calm
   m_EditorClassIdentifier: 
-  rootEmotion: Calm
+  rootEmotion:
+    emotionName: Calm
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
   childEmotions:
-  - Content
-  - Focused
-  - Patient
-  - Relaxed
-  - Thankful
-  - Thoughtful
+  - emotionName: Content
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Focused
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Patient
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Relaxed
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Thankful
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Thoughtful
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}

@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f64a35042451442b2fe8ddbab0a8a6, type: 3}
   m_Name: Joy
   m_EditorClassIdentifier: 
-  rootEmotion: Joy
+  rootEmotion:
+    emotionName: Joy
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
   childEmotions:
-  - Cheerful
-  - Creative
-  - Energetic
-  - Excited
-  - Hopeful
-  - Loving
+  - emotionName: Cheerful
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Creative
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Energetic
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Excited
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Hopeful
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
+  - emotionName: Loving
+    emotionColor: {r: 0, g: 0, b: 0, a: 0}
