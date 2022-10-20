@@ -29,6 +29,7 @@ namespace Scrolling
             var gameObjectPosition = transform.position;
             gameObjectPosition = new Vector3(_startingXPosition + distance, gameObjectPosition.y, gameObjectPosition.z);
             transform.position = gameObjectPosition;
+            
             if (distanceTravelled > _startingXPosition + _spriteWidth)
                 _startingXPosition += _spriteWidth;
             else if (distanceTravelled < _startingXPosition - _spriteWidth)

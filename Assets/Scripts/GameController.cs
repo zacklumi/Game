@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 using LoginPrompt;
-using LoginPrompt.ScriptableObjects;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public List<TreeDataScriptable> treeData = new();
-    private List<string> selectedEmotions = new();
+    private readonly List<string> _selectedEmotions = new();
     public static event Action OnSelectionsCompleted;
     private void Awake()
     {
@@ -23,8 +21,8 @@ public class GameController : MonoBehaviour
 
     private void AddEmotionToSelections(string selection)
     {
-        selectedEmotions.Add(selection);
-        if (selectedEmotions.Count >= 2)
+        _selectedEmotions.Add(selection);
+        if (_selectedEmotions.Count >= 2)
         {
             OnSelectionsCompleted?.Invoke();
         }
@@ -32,6 +30,6 @@ public class GameController : MonoBehaviour
 
     private void WipeExistingSelections()
     {
-        selectedEmotions.Clear();
+        _selectedEmotions.Clear();
     }
 }

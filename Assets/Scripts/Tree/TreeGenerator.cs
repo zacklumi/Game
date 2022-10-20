@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using HistoricalData.ScriptableObjects;
 using LoginPrompt.ScriptableObjects;
 using UnityEngine;
 
@@ -12,18 +13,7 @@ namespace Tree
 
         private void Awake()
         {
-            var mostSelectedEmotion = treeData.emotionalData.Max(item => item.selections);
-            var selectedEmotionName = treeData.emotionalData.Find((prompt) => prompt.selections == mostSelectedEmotion).emotionName;
-            var treeLeafColor = GetLeafColor(selectedEmotionName);
-            var childSpriteRenderers = GetComponentsInChildren<SpriteRenderer>();
-            foreach (var childRenderer in childSpriteRenderers)
-            {
-                if (childRenderer.gameObject == gameObject)
-                    continue;
-                childRenderer.color = treeLeafColor;
-            }
-
-            transform.localScale = new Vector3(Random.Range(0.9f, 1.1f) * Mathf.Sign(Random.value - 0.5f), Random.Range(0.9f, 1.1f), 1.0f);
+            AssignLeafColors();
         }
 
         private Color GetLeafColor(string inputName)
@@ -34,6 +24,23 @@ namespace Tree
             }
 
             return Color.white;
+        }
+
+        public void AssignLeafColors()
+        {
+            transform.localScale = new Vector3(Random.Range(0.9f, 1.1f) * Mathf.Sign(Random.value - 0.5f), Random.Range(0.9f, 1.1f), 1.0f);
+            if (treeData == null)
+                return;
+            var mostSelectedEmotion = treeData.emotionalData.Max(item => item.selections);
+            var selectedEmotionName = treeData.emotionalData.Find((prompt) => prompt.selections == mostSelectedEmotion).emotionName;
+            var treeLeafColor = GetLeafColor(selectedEmotionName);
+            var childSpriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+            foreach (var childRenderer in childSpriteRenderers)
+            {
+                if (childRenderer.gameObject == gameObject)
+                    continue;
+                childRenderer.color = treeLeafColor;
+            }
         }
     }
 }
