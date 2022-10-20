@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public List<string> selectedEmotions = new();
+    public List<TreeDataScriptable> treeData = new();
+    private List<string> selectedEmotions = new();
     public static event Action OnSelectionsCompleted;
     private void Awake()
     {
