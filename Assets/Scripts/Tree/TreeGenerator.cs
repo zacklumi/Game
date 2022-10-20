@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HistoricalData.ScriptableObjects;
 using LoginPrompt.ScriptableObjects;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Tree
 {
@@ -10,6 +12,8 @@ namespace Tree
     {
         public TreeDataScriptable treeData;
         public List<NamingPromptScriptable> emotionData = new();
+        
+        public static event Action<TreeDataScriptable> OnTreeSelected;
 
         private void Awake()
         {
@@ -41,6 +45,11 @@ namespace Tree
                     continue;
                 childRenderer.color = treeLeafColor;
             }
+        }
+        
+        private void OnMouseUp()
+        {
+            OnTreeSelected?.Invoke(treeData);
         }
     }
 }
