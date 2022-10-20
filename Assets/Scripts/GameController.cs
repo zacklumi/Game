@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using LoginPrompt;
+using LoginPrompt.ScriptableObjects;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
