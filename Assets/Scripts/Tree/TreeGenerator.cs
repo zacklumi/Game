@@ -28,7 +28,7 @@ namespace Tree
 
         public void AssignLeafColors()
         {
-            transform.localScale = new Vector3(Random.Range(0.9f, 1.1f) * Mathf.Sign(Random.value - 0.5f), Random.Range(0.9f, 1.1f), 1.0f);
+            transform.localScale = new Vector3(Random.Range(0.9f, 1.1f) * Mathf.Sign(Random.value - 0.5f), Random.Range(0.97f, 1.03f), 1.0f);
             if (treeData == null)
                 return;
             var mostSelectedEmotion = treeData.emotionalData.Max(item => item.selections);
